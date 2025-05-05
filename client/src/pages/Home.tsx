@@ -14,7 +14,7 @@ import { motion } from "framer-motion";
 const Home = () => {
   useEffect(() => {
     // Set the page title
-    document.title = "FurniX Agency | Furniture Industry Specialists";
+    document.title = "ApeX Agency | Furniture Industry Specialists";
   }, []);
 
   return (

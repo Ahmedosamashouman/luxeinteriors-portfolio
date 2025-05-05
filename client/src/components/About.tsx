@@ -23,7 +23,7 @@ const About = () => {
             </h2>
             <div className="w-20 h-1 bg-primary mb-8"></div>
             <p className="font-sans text-accent mb-6">
-              At FurniX, we blend innovative technology with industry expertise to revolutionize how furniture brands market, showcase, and sell their products both locally and internationally.
+              At ApeX, we blend innovative technology with industry expertise to revolutionize how furniture brands market, showcase, and sell their products both locally and internationally.
             </p>
             <p className="font-sans text-accent mb-8">
               Our specialized approach combines marketing excellence, cutting-edge extended reality solutions, and strategic networking opportunities to position Egyptian furniture manufacturers at the forefront of the global market.
@@ -48,7 +48,9 @@ const About = () => {
             </div>
 
             <motion.a
-              href="#contact"
+              href="https://calendly.com/apex-agency/partnership"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-block bg-primary text-white font-sans font-medium py-3 px-8 transition-custom hover:bg-red-800"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}

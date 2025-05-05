@@ -74,7 +74,11 @@ const FeatureSpotlight = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.5 }}
         >
-          <Link href="#contact">
+          <a
+            href="https://calendly.com/apex-agency/xr-demo"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <motion.button 
               className="inline-block bg-primary text-white font-sans font-medium py-3 px-8 transition-custom hover:bg-red-800"
               whileHover={{ scale: 1.05 }}
@@ -82,7 +86,7 @@ const FeatureSpotlight = () => {
             >
               Explore XR Solutions
             </motion.button>
-          </Link>
+          </a>
         </motion.div>
       </div>
     </section>
