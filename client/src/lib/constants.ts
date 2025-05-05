@@ -68,21 +68,21 @@ export const portfolioItems: PortfolioItem[] = [
 
 export const testimonials: Testimonial[] = [
   {
-    quote: "The AR solution developed by FurniX transformed our showroom experience. Our customers can now visualize our furniture in their homes before purchase, resulting in a 40% increase in conversion rate.",
+    quote: "The AR solution developed by ApeX transformed our showroom experience. Our customers can now visualize our furniture in their homes before purchase, resulting in a 40% increase in conversion rate.",
     name: "Ahmed Hassan",
     title: "CEO",
     company: "Royal Furnishings",
     initials: "AH"
   },
   {
-    quote: "Through FurniX's GCC networking program, we've established relationships with major retailers in Dubai and Qatar. Their market knowledge and connections were invaluable for our international expansion.",
+    quote: "Through ApeX's GCC networking program, we've established relationships with major retailers in Dubai and Qatar. Their market knowledge and connections were invaluable for our international expansion.",
     name: "Laila Mohamed",
     title: "Marketing Director",
     company: "EliteCraft",
     initials: "LM"
   },
   {
-    quote: "The marketing campaign FurniX designed for our luxury collection exceeded expectations. The professional photography and strategic digital marketing resulted in our highest quarterly sales to date.",
+    quote: "The marketing campaign ApeX designed for our luxury collection exceeded expectations. The professional photography and strategic digital marketing resulted in our highest quarterly sales to date.",
     name: "Karim Salah",
     title: "Owner",
     company: "Elegance Furniture",
