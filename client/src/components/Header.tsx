@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import { Link } from "wouter";
 import { useMobile } from "@/hooks/use-mobile";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
@@ -15,6 +14,14 @@ const Header = () => {
 
   const closeMenu = () => {
     setIsMenuOpen(false);
+  };
+
+  const scrollToSection = (sectionId: string) => {
+    closeMenu();
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
   };
 
   useEffect(() => {
@@ -35,34 +42,69 @@ const Header = () => {
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-custom ${scrolled ? "bg-white/90 backdrop-blur-sm shadow-sm" : "bg-transparent"}`}>
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
-        <Link href="/" className="flex items-center">
+        <a 
+          href="#" 
+          onClick={(e) => {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+          }}
+          className="flex items-center"
+        >
           <span className="text-3xl font-display font-bold text-accent">
             Ape<span className="text-primary">X</span>
           </span>
-        </Link>
+        </a>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:block">
           <ul className="flex space-x-8">
             <li>
-              <Link href="#services" className="font-sans text-sm font-medium tracking-wide uppercase underline-animation">
+              <a 
+                href="#services" 
+                onClick={(e) => {
+                  e.preventDefault();
+                  scrollToSection('services');
+                }}
+                className="font-sans text-sm font-medium tracking-wide uppercase underline-animation cursor-pointer"
+              >
                 Services
-              </Link>
+              </a>
             </li>
             <li>
-              <Link href="#about" className="font-sans text-sm font-medium tracking-wide uppercase underline-animation">
+              <a 
+                href="#about" 
+                onClick={(e) => {
+                  e.preventDefault();
+                  scrollToSection('about');
+                }}
+                className="font-sans text-sm font-medium tracking-wide uppercase underline-animation cursor-pointer"
+              >
                 About
-              </Link>
+              </a>
             </li>
             <li>
-              <Link href="#marketplace" className="font-sans text-sm font-medium tracking-wide uppercase underline-animation">
+              <a 
+                href="#marketplace" 
+                onClick={(e) => {
+                  e.preventDefault();
+                  scrollToSection('marketplace');
+                }}
+                className="font-sans text-sm font-medium tracking-wide uppercase underline-animation cursor-pointer"
+              >
                 Marketplace
-              </Link>
+              </a>
             </li>
             <li>
-              <Link href="#contact" className="font-sans text-sm font-medium tracking-wide uppercase underline-animation">
+              <a 
+                href="#contact" 
+                onClick={(e) => {
+                  e.preventDefault();
+                  scrollToSection('contact');
+                }}
+                className="font-sans text-sm font-medium tracking-wide uppercase underline-animation cursor-pointer"
+              >
                 Contact
-              </Link>
+              </a>
             </li>
           </ul>
         </nav>
@@ -89,24 +131,52 @@ const Header = () => {
           >
             <ul className="space-y-4">
               <li>
-                <Link href="#services" className="block font-sans text-sm font-medium tracking-wide uppercase py-2" onClick={closeMenu}>
+                <a 
+                  href="#services" 
+                  onClick={(e) => {
+                    e.preventDefault();
+                    scrollToSection('services');
+                  }}
+                  className="block font-sans text-sm font-medium tracking-wide uppercase py-2 cursor-pointer"
+                >
                   Services
-                </Link>
+                </a>
               </li>
               <li>
-                <Link href="#about" className="block font-sans text-sm font-medium tracking-wide uppercase py-2" onClick={closeMenu}>
+                <a 
+                  href="#about" 
+                  onClick={(e) => {
+                    e.preventDefault();
+                    scrollToSection('about');
+                  }}
+                  className="block font-sans text-sm font-medium tracking-wide uppercase py-2 cursor-pointer"
+                >
                   About
-                </Link>
+                </a>
               </li>
               <li>
-                <Link href="#marketplace" className="block font-sans text-sm font-medium tracking-wide uppercase py-2" onClick={closeMenu}>
+                <a 
+                  href="#marketplace" 
+                  onClick={(e) => {
+                    e.preventDefault();
+                    scrollToSection('marketplace');
+                  }}
+                  className="block font-sans text-sm font-medium tracking-wide uppercase py-2 cursor-pointer"
+                >
                   Marketplace
-                </Link>
+                </a>
               </li>
               <li>
-                <Link href="#contact" className="block font-sans text-sm font-medium tracking-wide uppercase py-2" onClick={closeMenu}>
+                <a 
+                  href="#contact" 
+                  onClick={(e) => {
+                    e.preventDefault();
+                    scrollToSection('contact');
+                  }}
+                  className="block font-sans text-sm font-medium tracking-wide uppercase py-2 cursor-pointer"
+                >
                   Contact
-                </Link>
+                </a>
               </li>
             </ul>
           </motion.nav>

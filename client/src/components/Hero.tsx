@@ -1,4 +1,3 @@
-import { Link } from "wouter";
 import { motion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
 
@@ -31,12 +30,17 @@ const Hero = () => {
           </p>
           <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6">
             <a
-              href="https://calendly.com/apex-agency/meeting"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="#contact"
+              onClick={(e) => {
+                e.preventDefault();
+                const contactSection = document.getElementById('contact');
+                if (contactSection) {
+                  contactSection.scrollIntoView({ behavior: 'smooth' });
+                }
+              }}
               className="inline-block bg-primary text-white font-sans font-medium py-3 px-8 transition-custom hover:bg-red-800 text-center"
             >
-              Schedule a Meeting
+              Reach Us
             </a>
             <a
               href="https://calendly.com/apex-agency/consultation"
@@ -55,9 +59,19 @@ const Hero = () => {
         animate={{ y: [0, 10, 0] }}
         transition={{ duration: 2, repeat: Infinity }}
       >
-        <Link href="#services" className="text-white opacity-75 hover:opacity-100 transition-custom">
+        <a 
+          href="#services" 
+          onClick={(e) => {
+            e.preventDefault();
+            const servicesSection = document.getElementById('services');
+            if (servicesSection) {
+              servicesSection.scrollIntoView({ behavior: 'smooth' });
+            }
+          }}
+          className="text-white opacity-75 hover:opacity-100 transition-custom"
+        >
           <ChevronDown size={24} />
-        </Link>
+        </a>
       </motion.div>
     </section>
   );

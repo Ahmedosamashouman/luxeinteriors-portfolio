@@ -114,9 +114,9 @@ const ContactForm = () => {
                 <div>
                   <h4 className="font-sans font-semibold mb-2">Email Us</h4>
                   <p className="font-sans text-accent/80">
-                    info@furnixagency.com
+                    info@apexagency.com
                     <br />
-                    support@furnixagency.com
+                    support@apexagency.com
                   </p>
                 </div>
               </div>
