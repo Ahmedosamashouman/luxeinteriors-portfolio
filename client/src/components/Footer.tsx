@@ -50,7 +50,7 @@ const Footer = () => {
           <div>
             <Link href="/" className="inline-block mb-6">
               <span className="text-3xl font-display font-bold text-white">
-                Furni<span className="text-primary">X</span>
+                Ape<span className="text-primary">X</span>
               </span>
             </Link>
             <p className="font-sans text-white/70 mb-6">
@@ -166,7 +166,7 @@ const Footer = () => {
 
         <div className="pt-8 border-t border-white/20 flex flex-col md:flex-row justify-between items-center">
           <p className="font-sans text-white/50 text-sm mb-4 md:mb-0">
-            © {new Date().getFullYear()} FurniX Agency. All rights reserved.
+            © {new Date().getFullYear()} ApeX Agency. All rights reserved.
           </p>
           <div className="flex space-x-6">
             <Link href="#" className="font-sans text-white/50 text-sm hover:text-primary transition-custom">

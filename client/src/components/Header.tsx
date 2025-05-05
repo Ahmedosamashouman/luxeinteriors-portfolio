@@ -37,7 +37,7 @@ const Header = () => {
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
         <Link href="/" className="flex items-center">
           <span className="text-3xl font-display font-bold text-accent">
-            Furni<span className="text-primary">X</span>
+            Ape<span className="text-primary">X</span>
           </span>
         </Link>
 

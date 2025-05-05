@@ -30,18 +30,22 @@ const Hero = () => {
             industry.
           </p>
           <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6">
-            <Link
-              href="#services"
+            <a
+              href="https://calendly.com/apex-agency/meeting"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-block bg-primary text-white font-sans font-medium py-3 px-8 transition-custom hover:bg-red-800 text-center"
             >
-              Explore Services
-            </Link>
-            <Link
-              href="#contact"
+              Schedule a Meeting
+            </a>
+            <a
+              href="https://calendly.com/apex-agency/consultation"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-block bg-transparent border-2 border-white text-white font-sans font-medium py-3 px-8 transition-custom hover:bg-white/10 text-center"
             >
-              Contact Us
-            </Link>
+              Book a Consultation
+            </a>
           </div>
         </motion.div>
       </div>
